@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme inline {
+  --animate-meteor-effect: meteor 5s linear infinite;
+
+  @keyframes meteor {
+    0% {
+      transform: rotate(215deg) translateX(0);
+      opacity: 1;
+    }
+    70% {
+      opacity: 1;
+    }
+    100% {
+      transform: rotate(215deg) translateX(-500px);
+      opacity: 0;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.marquee {
+  display: inline-block;
+  white-space: nowrap;
+  animation: marquee 15s linear infinite;
+  will-change: transform;
+}
+
+.scrollbar-hide::-webkit-scrollbar {
+  display: none;
+}
+.scrollbar-hide {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+.bord {
+  border-bottom-left-radius: 140px;
+}
+
+/* .clip-corner {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+.clip-left {
+  clip-path: polygon(0 0, 100% 0, 100% 100%, 15% 100%, 0 85%);
+} */
+
+.clip-corner {
+  clip-path: polygon(0 0, 100% 0, 100% 85%, 85% 100%, 0 100%);
+}
+
+.clip-left-corner {
+  clip-path: polygon(10% 0, 100% 0, 100% 100%, 0 100%, 0 10%);
+}
+
+.clip-btn {
+  clip-path: polygon(0 0, 90% 0, 100% 50%, 90% 100%, 0 100%);
+}
+
+@layer utilities {
+  .clip-both-corners {
+    clip-path: polygon(
+      40px 0,
+      100% 0,
+      100% calc(100% - 60px),
+      calc(100% - 60px) 100%,
+      0 100%,
+      0 40px
+    );
+  }
+}
