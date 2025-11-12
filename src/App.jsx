@@ -1,6 +1,17 @@
+import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Navbar from "./Components/NavBar/NavBar";
+import ScrollToTop from "./ScrollToTop";
 import "./index.css";
-const App = () => {
-  return <div>Welcome to Invoking Systems Private Limited </div>;
-};
+
+function App() {
+  return (
+    <>
+      <Router>
+        <Navbar />
+        <ScrollToTop />
+      </Router>
+    </>
+  );
+}
 
 export default App;
