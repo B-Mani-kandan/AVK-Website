@@ -1,0 +1,16 @@
+Install & Run Ollama (The "AI Brain"):
+    Download and install Ollama from ollama.com.
+    In your terminal, run: ollama pull llama3:8b
+    Leave the Ollama application running.
+
+Python Libraries (to be installed):
+
+flask
+
+nltk
+
+requests
+
+sentence-transformers
+
+rank_bm25
