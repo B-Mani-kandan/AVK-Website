@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AVK Logistics (Test Site)</title>
+    
+    <!-- 
+      NEW, UPDATED LINKS:
+      Flask automatically serves files from the 'static' folder.
+      We use 'url_for' to get the correct path.
+    -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+    <script src="{{ url_for('static', filename='script.js') }}" defer></script>
+    
+</head>
+<body>
+    <!-- This is a placeholder for your main website content -->
+    <div class="main-content">
+        <h1>Welcome to AVK Logistics</h1>
+        <p>This is a sample page for your website. The chat bubble is in the bottom right corner.</p>
+        <p>Your Python server is now serving this HTML page!</p>
+    </div>
+
+    <!-- 
+      CHAT BUBBLE TOGGLE
+    -->
+    <button class="chat-toggle-button" id="chat-toggle-button">
+        <!-- Chat icon (simple SVG) -->
+        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"></path>
+        </svg>
+    </button>
+
+    <!-- 
+      CHAT WIDGET
+    -->
+    <div class="chat-widget" id="chat-widget">
+        <!-- 1. The Header -->
+        <div class="chat-header">
+            <h3>AVK Logistics Assistant</h3>
+            <button class="chat-close-button" id="chat-close-button">&times;</button>
+        </div>
+        
+        <!-- 2. The Message Area (where chats appear) -->
+        <div class="chat-messages" id="chat-messages">
+            <!-- Initial Bot Message -->
+            <div class="chat-message bot">
+                Hello! I am the AVK Logistics Assistant. How can I help you today?
+            </div>
+        </div>
+        
+        <!-- 3. The Input Area (where the user types) -->
+        <div class="chat-input-area">
+            <textarea id="chat-input" placeholder="Type your message..." rows="1"></textarea>
+            <button id="chat-send-button">
+                <!-- Send icon (simple SVG) -->
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="22" y1="2" x2="11" y2="13"></line>
+                    <polygon points="22 2 15 22 11 13 2 9 22 2"></polygon>
+                </svg>
+            </button>
+        </div>
+    </div>
+
+</body>
+</html>
