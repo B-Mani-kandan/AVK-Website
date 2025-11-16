@@ -1,0 +1,162 @@
+from flask import Flask, request, jsonify
+import ollama
+
+app = Flask(__name__)
+
+HTML_PAGE = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>AVK Local Chatbot</title>
+
+<style>
+body {
+    font-family: Arial, sans-serif;
+    background: #f1f1f1;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+}
+.chat-container {
+    width: 420px;
+    background: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+    overflow: hidden;
+}
+.header {
+    display: flex;
+    align-items: center;
+    background: #8B0000;
+    padding: 10px;
+    color: white;
+    justify-content: center;
+}
+.chat-box {
+    height: 480px;
+    overflow-y: auto;
+    padding: 15px;
+    background: #fafafa;
+}
+.bubble {
+    max-width: 75%;
+    padding: 10px 14px;
+    margin: 8px 0;
+    border-radius: 18px;
+    font-size: 15px;
+    line-height: 1.4;
+}
+.user {
+    background: #0066cc;
+    color: white;
+    margin-left: auto;
+    border-bottom-right-radius: 4px;
+}
+.bot {
+    background: #e0e0e0;
+    color: black;
+    border-bottom-left-radius: 4px;
+}
+.input-area {
+    display: flex;
+    border-top: 1px solid #ddd;
+}
+.input-area input {
+    width: 100%;
+    border: none;
+    padding: 14px;
+    font-size: 16px;
+    outline: none;
+}
+.input-area button {
+    background: #8B0000;
+    color: white;
+    border: none;
+    padding: 14px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+.input-area button:hover {
+    background: #a00000;
+}
+</style>
+
+</head>
+<body>
+
+<div class="chat-container">
+    <div class="header">
+        <h2>AVK Local Chatbot</h2>
+    </div>
+
+    <div id="chatbox" class="chat-box"></div>
+
+    <div class="input-area">
+        <input id="userInput" type="text" placeholder="Ask anything...">
+        <button onclick="sendMessage()">Send</button>
+    </div>
+</div>
+
+<script>
+function addMessage(text, sender) {
+    let chat = document.getElementById("chatbox");
+    let bubble = document.createElement("div");
+    bubble.className = sender === "user" ? "bubble user" : "bubble bot";
+    bubble.innerText = text;
+    chat.appendChild(bubble);
+    chat.scrollTop = chat.scrollHeight;
+}
+
+async function sendMessage() {
+    let input = document.getElementById("userInput");
+    let message = input.value.trim();
+    if (!message) return;
+
+    addMessage(message, "user");
+    input.value = "";
+
+    const response = await fetch("/chat", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ message })
+    });
+
+    const data = await response.json();
+    addMessage(data.reply, "bot");
+}
+</script>
+
+</body>
+</html>
+"""
+
+
+@app.route("/")
+def home():
+    return HTML_PAGE
+
+@app.route("/chat", methods=["POST"])
+def chat_api():
+    data = request.get_json()
+    user_msg = data.get("message", "")
+
+    try:
+        response = ollama.chat(
+            model="llama3.2",
+            messages=[
+                {"role": "system", "content": "You are a logistics assistant."},
+                {"role": "user", "content": user_msg}
+            ]
+        )
+        reply = response["message"]["content"]
+        return jsonify({"reply": reply})
+
+    except Exception as e:
+        return jsonify({"reply": f"⚠️ Ollama Error: {str(e)}"})
+
+# ----------------- RUN SERVER -----------------
+if __name__ == "__main__":
+    print("\n🚀 AVK Chatbot running at: http://127.0.0.1:5000\n")
+    app.run(debug=True)
