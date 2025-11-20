@@ -3,7 +3,7 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/pagination";
-import CustLogo1 from "../../assets/Common/Logo_2.webp";
+import CustLogo1 from "../../assets/Avk_Logo.webp";
 // import CustLogo2 from "../../../assets/CLIENTLOGO/COLORPANA.webp";
 // import CustLogo3 from "../../../assets/CLIENTLOGO/COLORTATA.webp";
 // import CustLogo4 from "../../../assets/CLIENTLOGO/COLORVELAKANI.webp";

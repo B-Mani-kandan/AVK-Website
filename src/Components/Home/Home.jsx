@@ -1,6 +1,6 @@
+// import Testimonials from "../Testimonials/Testimonials";
 import HomeAbout from "./HomeAbout";
 import HomeAchivement from "./HomeAchivement";
-import Achievements from "./HomeAchivement";
 import HomeHeroSection from "./HomeHeroSection";
 import HomeServices from "./HomeServices";
 import WhyChooseUs from "./HomeWhyChooseUs";
@@ -15,6 +15,7 @@ const Home = () => {
       <HomeServices />
       <HomeWorkingProcess />
       <HomeAchivement />
+      {/* <Testimonials /> */}
     </div>
   );
 };
