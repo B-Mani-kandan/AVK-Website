@@ -2,9 +2,11 @@ import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDownIcon } from "lucide-react";
 import Logo from "../../assets/Avk_Logo.png";
+import "../Home/Home.css";
 
 const Navbar = () => {
   const [openDropdown, setOpenDropdown] = useState(null);
+  const [isScrolled, setIsScrolled] = useState(false);
   const dropdownRef = useRef(null);
 
   const menuItems = [
@@ -29,26 +31,36 @@ const Navbar = () => {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      setIsScrolled(window.scrollY > 20);
+    };
+
+    window.addEventListener("scroll", handleScroll);
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+  useEffect(() => {
     const handleClickOutside = (event) => {
       if (dropdownRef.current && !dropdownRef.current.contains(event.target)) {
         setOpenDropdown(null);
       }
     };
     document.addEventListener("mousedown", handleClickOutside);
-    return () => {
-      document.removeEventListener("mousedown", handleClickOutside);
-    };
+    return () => document.removeEventListener("mousedown", handleClickOutside);
   }, []);
 
   return (
-    <nav className="w-full bg-[#dcdfe0] rounded-2xl shadow-sm flex items-center justify-between px-10 py-3 mt-3 mb-3 mx-auto max-w-[96%]">
+    <nav
+      className={`navbar-container ${
+        isScrolled ? "navbar-scrolled" : "navbar-top"
+      }`}
+    >
       <div className="flex items-center space-x-3">
-        <img src={Logo} alt="logo" className="h-10 w-25" />
+        <img src={Logo} alt="logo" className="nav-logo" />
         <div>
-          <h1 className="text-2xl font-semibold text-gray-800">
-            Trans Global<span className="text-[10px] align-super">®</span>
+          <h1 className="text-2xl font-semibold text-[#a9a7a7] font-changeHeading">
+            Trans Global<span className="text-[20px] align-super"> ®</span>
           </h1>
-          <p className="text-[10px] text-gray-600">
+          <p className="text-[12px] text-[#a9a7a7] font-change">
             Delivering Excellence in Global Logistics
           </p>
         </div>
@@ -56,7 +68,7 @@ const Navbar = () => {
 
       <ul
         ref={dropdownRef}
-        className="flex items-center space-x-8 text-gray-700 font-semibold text-sm uppercase relative"
+        className="flex items-center space-x-8 text-[#a9a7a7] font-semibold text-sm uppercase relative"
       >
         {menuItems.map((item, index) => (
           <li key={index} className="relative group">
@@ -100,10 +112,7 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-
-      <button className="bg-[#ffde59] text-black font-bold px-6 py-2 rounded-md hover:bg-yellow-400 transition">
-        Get a Quote
-      </button>
+      <button className="quote-btn">Get a Quote</button>
     </nav>
   );
 };

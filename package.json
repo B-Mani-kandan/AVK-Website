@@ -12,6 +12,7 @@
   "dependencies": {
     "@react-three/drei": "^10.7.6",
     "@react-three/fiber": "^9.0.0-alpha.8",
+    "@tabler/icons-react": "^3.35.0",
     "@tailwindcss/vite": "^4.1.12",
     "aos": "^2.3.4",
     "clsx": "^2.1.1",
@@ -20,7 +21,7 @@
     "framer-motion": "^12.23.12",
     "gsap": "^3.13.0",
     "lucide-react": "^0.540.0",
-    "motion": "^12.23.20",
+    "motion": "^12.23.24",
     "next": "^15.5.3",
     "next-themes": "^0.4.6",
     "react": "^19.1.1",
@@ -35,7 +36,7 @@
     "react-toastify": "^11.0.5",
     "remixicon": "^4.6.0",
     "swiper": "^12.0.2",
-    "tailwind-merge": "^3.3.1",
+    "tailwind-merge": "^3.4.0",
     "tailwindcss": "^4.1.12",
     "three": "^0.180.0",
     "three-globe": "^2.44.0"
