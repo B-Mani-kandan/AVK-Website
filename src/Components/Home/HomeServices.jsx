@@ -40,7 +40,7 @@ const services = [
 
 const HomeServices = () => {
   return (
-    <div className=" px-6 md:px-16 py-16 mt-15 bg-[#052138] ">
+    <div className=" px-6 md:px-20 py-16 mt-15 bg-[#052138] ">
       <div className="max-w-7xl mx-auto">
         <p className="text-sm text-gray-200 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           SERVICES
@@ -53,7 +53,7 @@ const HomeServices = () => {
           {services.map((service, index) => (
             <div
               key={index}
-              className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center border-b border-gray-300 pb-12 last:border-b-0"
+              className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center pb-12 last:border-b-0"
             >
               <div className="flex flex-col space-y-4">
                 <h3 className="text-xl font-bold font-serif text-white font-new">

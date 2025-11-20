@@ -1,5 +1,5 @@
 import "./Home.css";
-import ShipImg from "../../assets/ship-m.jpg";
+import ShipImg from "../../assets/ship-m.webp";
 import { Spotlight } from "../ui/Spotlight ";
 export default function HomeHeroSection() {
   return (

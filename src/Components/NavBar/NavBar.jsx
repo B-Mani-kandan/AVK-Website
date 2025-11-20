@@ -1,7 +1,7 @@
 import { useState, useEffect, useRef } from "react";
 import { Link } from "react-router-dom";
 import { ChevronDownIcon } from "lucide-react";
-import Logo from "../../assets/Avk_Logo.png";
+import Logo from "../../assets/Avk_Logo.webp";
 import "../Home/Home.css";
 
 const Navbar = () => {
@@ -15,15 +15,15 @@ const Navbar = () => {
     {
       name: "OUR SERVICES",
       subMenu: [
-        { name: "IMPORT", path: "/import" },
-        { name: "EXPORT", path: "/export" },
+        { name: "OCEAN-FREIGHT", path: "/ocean-freight" },
+        { name: "AIR-FREIGHT", path: "/air-freight" },
         { name: "WAREHOUSING", path: "/warehousing" },
         { name: "PROJECT CARGO", path: "/project-cargo" },
         { name: "FORWARDING", path: "/forwarding" },
         { name: "CUSTOM CLEARENCE", path: "/custom-clearence" },
       ],
     },
-    { name: "CONTACT US", path: "/contact" },
+    { name: "CONTACT US", path: "/contact-us" },
   ];
 
   const handleDropdown = (index) => {
