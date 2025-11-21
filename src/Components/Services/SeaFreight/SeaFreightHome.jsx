@@ -1,4 +1,4 @@
-import bgShip from "../../../assets/SeaFreight/HomeShip.png";
+import bgShip from "../../../assets/SeaFreight/HomeShip.webp";
 
 export default function SeaFreightHome() {
   return (

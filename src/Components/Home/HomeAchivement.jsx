@@ -1,12 +1,12 @@
 import HangeContainer from "../../assets/HangContiner.webp";
-import Australia from "../../assets/Flags/AustaliaFlag.png";
-import Europe from "../../assets/Flags/EuropeFlag.png";
-import Indonesia from "../../assets/Flags/IndonesiaFlag.png";
-import Malasiya from "../../assets/Flags/MalasiyaFlag.png";
-import NewsZland from "../../assets/Flags/NewsZlandFlag.png";
-import Portugal from "../../assets/Flags/PortugalFlag.png";
-import Singapore from "../../assets/Flags/SingaporeFlag.png";
-import SouthAfrica from "../../assets/Flags/SouthAfricaFlag.png";
+import Australia from "../../assets/Flags/AustaliaFlag.webp";
+import Europe from "../../assets/Flags/EuropeFlag.webp";
+import Indonesia from "../../assets/Flags/IndonesiaFlag.webp";
+import Malasiya from "../../assets/Flags/MalasiyaFlag.webp";
+import NewsZland from "../../assets/Flags/NewsZlandFlag.webp";
+import Portugal from "../../assets/Flags/PortugalFlag.webp";
+import Singapore from "../../assets/Flags/SingaporeFlag.webp";
+import SouthAfrica from "../../assets/Flags/SouthAfricaFlag.webp";
 
 export default function HomeAchivement() {
   const exportCountries = [
