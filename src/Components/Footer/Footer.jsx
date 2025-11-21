@@ -28,7 +28,7 @@ export default function Footer() {
   const showHero = location.pathname !== "/Contact-Us";
   return (
     <>
-      {showHero && <FooterHero />}
+      {/* {showHero && <FooterHero />} */}
       <footer
         className={`bg-[#052138] text-gray-300 px-6 md:px-16 lg:px-24 py-14
           ${showHero ? "-mt-40" : ""}  

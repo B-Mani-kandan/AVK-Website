@@ -45,8 +45,8 @@ export default function HeavyLiftServices() {
             data-aos="fade-right"
             className="text-4xl font-bold font-new leading-snug"
           >
-            Our <span className="text-[#7c0204]">Comprehensive</span> <br />
-            <span className="text-[#7c0204]">Heavy Lift</span> Services
+            Our Comprehensive <br />
+            Heavy Lift Services
           </h2>
         </div>
         <div className="max-w-xl mt-6 lg:mt-0">

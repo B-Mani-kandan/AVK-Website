@@ -23,6 +23,7 @@ const Navbar = () => {
         { name: "CUSTOM CLEARENCE", path: "/custom-clearence" },
       ],
     },
+    { name: "PRODUCTS", path: "/products" },
     { name: "CONTACT US", path: "/Contact-Us" },
   ];
 

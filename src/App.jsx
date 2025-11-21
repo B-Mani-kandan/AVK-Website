@@ -11,6 +11,10 @@ import "aos/dist/aos.css";
 import AirFreight from "./Components/Services/AirFreight/AirFreight";
 import SeaFreight from "./Components/Services/SeaFreight/SeaFreight";
 import HeavyLift from "./Components/Services/HeavyProject/HeavyLift";
+import Customs from "./Components/Services/Customs/Customs";
+import Forwarding from "./Components/Services/Forwarding/Forwarding";
+import WareHousing from "./Components/Services/WareHouse/WareHousing";
+import { Products } from "./Components/Services/Products/Products";
 
 function App() {
   useEffect(() => {
@@ -28,6 +32,10 @@ function App() {
           <Route path="/ocean-freight" element={<SeaFreight />} />
           <Route path="/air-freight" element={<AirFreight />} />
           <Route path="/project-cargo" element={<HeavyLift />} />
+          <Route path="/custom-clearence" element={<Customs />} />
+          <Route path="/forwarding" element={<Forwarding />} />
+          <Route path="/warehousing" element={<WareHousing />} />
+          <Route path="/products" element={<Products />} />
         </Routes>
         <Footer />
       </Router>

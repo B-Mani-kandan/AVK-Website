@@ -49,7 +49,7 @@ const AirFreightFeatures = () => {
     <section className="relative bg-[#04558c] text-white max-w-7xl mx-auto px-6 py-16 md:px-20 overflow-hidden">
       <div className="absolute inset-0 bg-black/70 z-0"></div>
       <div className="relative z-10 max-w-7xl mx-auto feature-scroll">
-        <p className="text-sm text-gray-300 uppercase  tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
+        <p className="text-sm text-gray-300 uppercase  tracking-widest border-l-4 border-yellow-400 pl-3 mb-6 font-medium">
           WHY CHOOSE OUR AIR FREIGHT SERVICES
         </p>
         <div className="flex flex-col lg:flex-row items-center justify-center -space-x-8 md:-space-x-16 lg:-space-x-24">

@@ -40,7 +40,7 @@ export default function SeaFreightServices() {
       </div>
       <div className="flex flex-col md:flex-row md:items-center md:justify-between mb-12">
         <div>
-          <h2 className="text-3xl md:text-5xl font-bold font-serif text-gray-900 leading-tight">
+          <h2 className="text-3xl md:text-5xl font-bold font-new text-black leading-tight">
             Solution for your <br /> business need
           </h2>
         </div>

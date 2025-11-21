@@ -10,7 +10,7 @@ export default function SeaFreightHome() {
         backgroundPosition: "center",
       }}
     >
-      <div className="absolute bottom-6 left-4 sm:left-10 md:left-16 z-20 max-w-xl sm:max-w-2xl px-2">
+      <div className="absolute bottom-6 left-4 sm:left-10 md:left-16 z-20 max-w-xl sm:max-w-2xl px-2 ">
         <p className="text-xs sm:text-sm text-gray-300 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-3 font-medium">
           OCEAN FREIGHT
         </p>

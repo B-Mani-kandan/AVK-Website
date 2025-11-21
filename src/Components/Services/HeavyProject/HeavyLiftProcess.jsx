@@ -59,9 +59,7 @@ export default function HeavyLiftProcess() {
             data-aos="fade-up"
             className="text-4xl font-new font-bold mb-8 leading-snug"
           >
-            <span className="block text-[#7c0204]">
-              Project &amp; Heavy Lift Cargo
-            </span>
+            <span className="block ">Project &amp; Heavy Lift Cargo</span>
             Tailored Solutions for Oversized{" "}
             <span className="text-black">Shipments</span>
           </h2>
