@@ -27,7 +27,7 @@ const steps = [
 
 export default function HomeWorkingProcess() {
   return (
-    <div className="w-full bg-white py-20 px-6 md:px-20 md:mb-15">
+    <div className="w-full bg-white md:mb-10 max-w-7xl mx-auto px-6 py-16 md:px-20">
       <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
         WORKING PROCESS
       </p>

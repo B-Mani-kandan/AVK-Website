@@ -15,7 +15,6 @@ const Home = () => {
       <HomeServices />
       <HomeWorkingProcess />
       <HomeAchivement />
-      {/* <Testimonials /> */}
     </div>
   );
 };

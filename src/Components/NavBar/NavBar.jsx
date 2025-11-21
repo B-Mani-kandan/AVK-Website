@@ -23,7 +23,7 @@ const Navbar = () => {
         { name: "CUSTOM CLEARENCE", path: "/custom-clearence" },
       ],
     },
-    { name: "CONTACT US", path: "/contact-us" },
+    { name: "CONTACT US", path: "/Contact-Us" },
   ];
 
   const handleDropdown = (index) => {
@@ -68,7 +68,7 @@ const Navbar = () => {
 
       <ul
         ref={dropdownRef}
-        className="flex items-center space-x-8 text-[#a9a7a7] font-semibold text-sm uppercase relative"
+        className="flex items-center space-x-8 font-new text-[#a9a7a7] font-bold text-sm uppercase relative"
       >
         {menuItems.map((item, index) => (
           <li key={index} className="relative group">
@@ -91,7 +91,7 @@ const Navbar = () => {
                       <li key={i}>
                         <Link
                           to={sub.path}
-                          className="block px-3 py-2 text-gray-800 hover:text-sky-600 font-medium"
+                          className="block px-3 py-2 text-gray-800 hover:text-sky-600 font-semibold"
                           onClick={() => setOpenDropdown(null)}
                         >
                           {sub.name}
@@ -104,7 +104,7 @@ const Navbar = () => {
             ) : (
               <Link
                 to={item.path}
-                className="hover:text-sky-600 transition-colors"
+                className="hover:text-sky-600 font-new transition-colors"
               >
                 {item.name}
               </Link>
@@ -112,7 +112,9 @@ const Navbar = () => {
           </li>
         ))}
       </ul>
-      <button className="quote-btn">Get a Quote</button>
+      <Link to="/Contact-Us" className="quote-btn font-new">
+        Get a Quote
+      </Link>
     </nav>
   );
 };

@@ -1,6 +1,7 @@
 import "./Home.css";
 import ShipImg from "../../assets/ship-m.webp";
 import { Spotlight } from "../ui/Spotlight ";
+import { Link as ScrollLink } from "react-scroll";
 export default function HomeHeroSection() {
   return (
     <div className="hero-container">
@@ -9,7 +10,17 @@ export default function HomeHeroSection() {
           <h1 className="leading-[1.8]">
             Delivering End-to-End Logistics For a World That Never Stops Moving
           </h1>
-          <button className="quote-btn font-new">Get a Quote Today</button>
+          <div className="mt-8 cursor-pointer">
+            <ScrollLink
+              to="AboutContent"
+              smooth={true}
+              duration={800}
+              offset={-100}
+              className="quote-btn font-new "
+            >
+              Get started
+            </ScrollLink>
+          </div>
           <div className="stats-grid">
             <div className="stat-item">
               <strong className="stat-number">500+</strong>
@@ -35,7 +46,7 @@ export default function HomeHeroSection() {
             </div>
           </div>
         </div>
-        <div className="hero-right">
+        <div className="hero-right ">
           <div className="circle small-circle"></div>
           <div className="circle mid-circle"></div>
           <Spotlight />

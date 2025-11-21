@@ -25,20 +25,20 @@ export default function HomeAchivement() {
   ];
 
   return (
-    <section className="w-full max-w-7xl mx-auto px-6 py-16 md:px-20 font-new bg-[#f7f3e8]">
+    <section className="w-full max-w-7xl mx-auto px-6 py-16 md:px-20  font-new ">
       <div className="text-center mb-16">
-        <h2 className="text-3xl md:text-4xl font-semibold leading-snug">
+        <h2 className="text-4xl md:text-4xl font-semibold leading-snug text-[#7c0204]">
           Our Achievements Made Us <br /> Well Known Through
         </h2>
       </div>
       <div className="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 items-center px-4 gap-10">
         <div className="flex flex-col items-center md:items-end gap-10">
           <div className="text-center md:text-right">
-            <p className="text-4xl font-bold mb-2">50+</p>
+            <p className="text-5xl font-bold mb-4">50+</p>
             <p className="text-gray-600 text-sm">Daily Shipments</p>
           </div>
           <div className="text-center md:text-right">
-            <p className="text-4xl font-bold mb-2">100+</p>
+            <p className="text-5xl font-bold mb-4">50+</p>
             <p className="text-gray-600 text-sm">Trusted Clients</p>
           </div>
         </div>
@@ -51,17 +51,19 @@ export default function HomeAchivement() {
         </div>
         <div className="flex flex-col items-center md:items-start gap-10">
           <div className="text-center md:text-left">
-            <p className="text-4xl font-bold mb-2">10+</p>
+            <p className="text-5xl font-bold mb-4">10+</p>
             <p className="text-gray-600 text-sm">Countries Connected</p>
           </div>
           <div className="text-center md:text-left">
-            <p className="text-4xl font-bold mb-2">50+</p>
+            <p className="text-5xl font-bold mb-4">50+</p>
             <p className="text-gray-600 text-sm">Successful Projects</p>
           </div>
         </div>
       </div>
       <div className="max-w-6xl mx-auto mt-20 px-4">
-        <h3 className="text-2xl font-semibold mb-6">Export Countries</h3>
+        <h3 className="text-2xl font-semibold text-[#7c0204] mb-6">
+          Export Countries
+        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6 mb-16">
           {exportCountries.map((c, i) => (
             <div
@@ -80,7 +82,9 @@ export default function HomeAchivement() {
             </div>
           ))}
         </div>
-        <h3 className="text-2xl font-semibold mb-6">Import Countries</h3>
+        <h3 className="text-2xl font-semibold text-[#7c0204] mb-6">
+          Import Countries
+        </h3>
         <div className="grid grid-cols-2 md:grid-cols-4 gap-6">
           {importCountries.map((c, i) => (
             <div

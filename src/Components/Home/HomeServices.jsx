@@ -2,16 +2,20 @@ import HeavyLifting from "../../assets/HeavyLift.webp";
 import ShipImage from "../../assets/SeaFreight.webp";
 import AirImage from "../../assets/AirFreight.webp";
 import DynamicButton from "../Buttons/DynamicButton";
+import Customs from "../../assets/Customs.webp";
+import Forwarding from "../../assets/Forwarding.webp";
+import Warehouse from "../../assets/Warehousing.webp";
+
 const services = [
   {
     id: "01",
     title: "OCEAN FREIGHT",
     image: ShipImage,
     ParaghTitle:
-      "LCL Consolidation at the center of our comprehensive services",
-    ParaghSub: "Worldwide Shipping",
+      "Reliable Global Sea Freight Solutions Tailored for All Cargo Types.",
+    ParaghSub: "Worldwide Sea Transport",
     Paragh:
-      "We specialize in reliable ocean freight forwarding, ensuring your goods reach international destinations securely, on schedule, and cost-effectively.",
+      "We provide efficient and cost-effective ocean freight services with dependable schedules, professional handling, and complete visibility from port to port or door to door.",
     link: "/Ocean-Freight-Services",
   },
   {
@@ -19,10 +23,10 @@ const services = [
     title: "AIR FREIGHT",
     image: AirImage,
     ParaghTitle:
-      "Fast And Reliable Air Freight Solutions For Urgent And Time-Sensitive Cargo.",
-    ParaghSub: "Express Transport",
+      "Fast, Secure & Priority Air Freight for Time-Critical Shipments.",
+    ParaghSub: "Express Air Cargo",
     Paragh:
-      "Our air freight services prioritize speed and precision, offering express solutions with global coverage to keep your supply chain efficient.",
+      "Our air freight services ensure speed, reliability, and precision for urgent shipments. We offer global coverage, competitive transit times, and seamless customs coordination.",
     link: "/Air-Freight-Services",
   },
   {
@@ -30,11 +34,44 @@ const services = [
     title: "PROJECT & HEAVY LIFT CARGO",
     image: HeavyLifting,
     ParaghTitle:
-      "Specialized Transport For Heavy, Oversized, And Project Cargo With Precision Handling.",
-    ParaghSub: "Special Handling",
+      "Specialized Handling for Oversized, Heavy, and Complex Project Cargo.",
+    ParaghSub: "Engineering-Based Cargo Planning",
     Paragh:
-      "From industrial equipment to infrastructure materials, our team ensures secure transport with custom planning, safety protocols, and expert execution.",
+      "From industrial machinery to infrastructure components, our experts deliver safe, customized heavy-lift solutions with route surveys, lifting strategies, and on-site supervision.",
     link: "/Heavy-Lift-Cargo",
+  },
+  {
+    id: "04",
+    title: "WAREHOUSING & DISTRIBUTION",
+    image: Warehouse,
+    ParaghTitle:
+      "Secure, Scalable Storage Solutions for Streamlined Supply Chain Control.",
+    ParaghSub: "Safe Storage & Inventory Handling",
+    Paragh:
+      "We offer modern warehousing facilities with efficient inventory management, bonded storage, packaging, labeling, and last-mile distribution to optimize your logistics flow.",
+    link: "/Warehousing-Services",
+  },
+  {
+    id: "05",
+    title: "FREIGHT FORWARDING",
+    image: Forwarding,
+    ParaghTitle:
+      "End-to-End Freight Forwarding with Complete Coordination & Visibility.",
+    ParaghSub: "Global Forwarding Network",
+    Paragh:
+      "Our forwarding solutions cover transportation planning, carrier negotiation, documentation, and multimodal movement—ensuring smooth and timely delivery worldwide.",
+    link: "/Freight-Forwarding-Services",
+  },
+  {
+    id: "06",
+    title: "CUSTOMS CLEARANCE",
+    image: Customs,
+    ParaghTitle:
+      "Hassle-Free Customs Clearance with Expert Documentation Support.",
+    ParaghSub: "Compliance & Clearance",
+    Paragh:
+      "Our experienced customs team ensures quick processing, accurate filing, HS code classification, duty guidance, and regulatory compliance to prevent delays at ports and airports.",
+    link: "/Custom-Clearance",
   },
 ];
 
