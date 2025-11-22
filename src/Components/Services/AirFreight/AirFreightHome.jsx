@@ -1,63 +1,43 @@
-import AirHome from "../../../assets/AirFreight/AirHome.webp";
-const AirFreightHome = () => {
+import Air1 from "../../../assets/AirFreight/Aero.webp";
+import Air2 from "../../../assets/AirFreight/Aero.webp";
+import { Link } from "react-scroll";
+export default function AirFreightHome() {
   return (
-    <section className="relative bg-[#fff] text-black overflow-hidden">
-      <div className="container mx-auto flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-16 mt-15">
-        <div className="max-w-xl pr-5 space-y-6">
-          {/* <h4
-            data-aos="fade-right"
-            className="font-bold text-sm tracking-wide font-serif"
+    <div className="max-w-7xl mx-auto flex flex-col lg:flex-row items-start lg:items-center justify-between gap-10 md:mt-25 mt-15 px-6 py-16 md:px-20 md:mb-20 ">
+      <div className="flex-1 text-left">
+        <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
+          AIR FREIGHT SERVICES
+        </p>
+        <h1 className="text-4xl md:text-5xl font-bold text-gray-900 leading-tight mb-4">
+          Fast & Reliable Air Freight Services
+        </h1>
+        <p className="text-gray-600 mb-6">
+          From urgent shipments to high-value goods, we provide tailored air
+          cargo solutions with seamless handling, real-time tracking, and
+          end-to-end reliability. Experience the fastest route to global
+          delivery with our premium Air Freight services.
+        </p>
+        <div className="flex gap-4 flex-wrap">
+          <Link
+            to="productcard"
+            smooth={true}
+            offset={-100}
+            duration={2000}
+            href="#Discover"
+            className="border bg-[#ffd21c] font-bold border-[#ffd21c] font-new text-black px-5 py-2 rounded hover:bg-[#fcd34d] hover:text-black transition"
           >
-            01. Reliable Air Freight Services
-          </h4> */}
-          <h1
-            data-aos="fade-right"
-            className="text-3xl md:text-4xl font-extrabold text-gray-900 font-serif leading-snug mb-6"
-          >
-            <span className="text-[#16a3e6]"> Speed and Reliability </span>
-            Across Global Markets
-          </h1>
-          <p
-            data-aos="fade-up"
-            className="text-gray-700  text-justify leading-relaxed"
-          >
-            In today’s competitive business environment, speed can be the
-            defining factor in securing market advantage. Our Air Freight
-            services are designed to move goods quickly, safely, and reliably
-            across global markets. We offer express air cargo solutions for
-            urgent shipments, complete door-to-door services covering pickup,
-            customs clearance, and final delivery, as well as specialized
-            charter services for oversized or high-value cargo. Every shipment
-            benefits from personalized service, ensuring attention to detail and
-            compliance at every stage. Our partnerships with leading airlines
-            allow us to offer competitive rates and priority space allocations,
-            even in peak seasons.
-          </p>
-        </div>
-        <div className="relative mt-10 md:mt-0 flex gap-4">
-          <img
-            src={AirHome}
-            alt="airplane"
-            className="w-full h-full object-cover"
-          />
+            Discover More
+          </Link>
         </div>
       </div>
-
-      {/* <div className="bg-[#04558c] py-3 overflow-hidden relative">
-        <div className="marquee whitespace-nowrap font-serif text-white font-medium">
-          <span className="mx-6">OneLink Logistic Services</span>
-          <span className="mx-6">➤</span>
-          <span className="mx-6">OneLink Logistic Services</span>
-          <span className="mx-6">➤</span>
-          <span className="mx-6">OneLink Logistic Services</span>
-          <span className="mx-6">➤</span>
-          <span className="mx-6">OneLink Logistic Services</span>
-          <span className="mx-6">➤</span>
-          <span className="mx-6">OneLink Logistic Services</span>
-        </div>
-      </div> */}
-    </section>
+      <div className="flex-1 relative w-full flex justify-center items-center hide-on-mobile">
+        <div className="absolute w-[450px] h-[450px] rounded-t-full  bg-gradient-to-tr from-[#1d0f3b] to-[#052138] opacity-80 z-0"></div>
+        <img
+          src={Air1}
+          alt="Large Truck"
+          className="relative z-10 w-full max-w-lg"
+        />
+      </div>
+    </div>
   );
-};
-
-export default AirFreightHome;
+}

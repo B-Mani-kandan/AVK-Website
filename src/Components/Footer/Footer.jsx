@@ -28,17 +28,9 @@ export default function Footer() {
   const showHero = location.pathname !== "/Contact-Us";
   return (
     <>
-      {/* {showHero && <FooterHero />} */}
-      <footer
-        className={`bg-[#052138] text-gray-300 px-6 md:px-16 lg:px-24 py-14
-          ${showHero ? "-mt-40" : ""}  
-        `}
-      >
-        <div
-          className={`max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10
-            ${showHero ? "mt-50" : ""}
-          `}
-        >
+      {showHero && <FooterHero />}
+      <footer className="bg-[#052138] text-gray-300 px-6 md:px-16 mt-10 md:mt-30 lg:px-24 py-14">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <div className="flex items-center space-x-3 mb-6">
               <img src={Logo} alt="Company Logo" className="w-22 h-10" />

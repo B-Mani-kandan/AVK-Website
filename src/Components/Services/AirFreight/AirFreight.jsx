@@ -1,4 +1,4 @@
-// import AirFreightHome from "./AirFreightHome";
+import AirFreightHome from "./AirFreightHome";
 import AirFreightFeatures from "./AirFreightFeatures";
 import { AirFreightBento } from "./AirFreightBento";
 import AirFreightIntro from "./AirFreightIntro";
@@ -7,7 +7,7 @@ import HomeAchivement from "../../Home/HomeAchivement";
 const AirFreight = () => {
   return (
     <div>
-      {/* <AirFreightHome /> */}
+      <AirFreightHome />
       <AirFreightIntro />
       <AirFreightFeatures />
       <AirFreightBento />
