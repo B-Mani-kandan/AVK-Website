@@ -15,6 +15,7 @@ import Customs from "./Components/Services/Customs/Customs";
 import Forwarding from "./Components/Services/Forwarding/Forwarding";
 import WareHousing from "./Components/Services/WareHouse/WareHousing";
 import { Products } from "./Components/Services/Products/Products";
+import { AboutUs } from "./Components/AboutUs/AboutUs";
 
 function App() {
   useEffect(() => {
@@ -28,6 +29,7 @@ function App() {
         <ScrollToTop />
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/About-Us" element={<AboutUs />} />
           <Route path="/Contact-Us" element={<ContactUs />} />
           <Route path="/ocean-freight" element={<SeaFreight />} />
           <Route path="/air-freight" element={<AirFreight />} />

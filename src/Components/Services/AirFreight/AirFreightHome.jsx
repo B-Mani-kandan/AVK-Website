@@ -1,5 +1,4 @@
-import Air1 from "../../../assets/AirFreight/Aero.webp";
-import Air2 from "../../../assets/AirFreight/Aero.webp";
+import Air from "../../../assets/AirFreight/Aero.webp";
 import { Link } from "react-scroll";
 export default function AirFreightHome() {
   return (
@@ -19,12 +18,23 @@ export default function AirFreightHome() {
         </p>
         <div className="flex gap-4 flex-wrap">
           <Link
-            to="productcard"
+            to="AirIntro"
             smooth={true}
             offset={-100}
             duration={2000}
-            href="#Discover"
-            className="border bg-[#ffd21c] font-bold border-[#ffd21c] font-new text-black px-5 py-2 rounded hover:bg-[#fcd34d] hover:text-black transition"
+            href="#AirFreight"
+            className="
+              px-6 sm:px-8 
+              py-2 sm:py-3 
+              bg-black/80 
+              backdrop-blur-md 
+              border border-black/40 
+              rounded-md
+              text-white 
+              text-xs sm:text-sm 
+              hover:bg-black 
+              transition
+            "
           >
             Discover More
           </Link>
@@ -33,7 +43,7 @@ export default function AirFreightHome() {
       <div className="flex-1 relative w-full flex justify-center items-center hide-on-mobile">
         <div className="absolute w-[450px] h-[450px] rounded-t-full  bg-gradient-to-tr from-[#1d0f3b] to-[#052138] opacity-80 z-0"></div>
         <img
-          src={Air1}
+          src={Air}
           alt="Large Truck"
           className="relative z-10 w-full max-w-lg"
         />

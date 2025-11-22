@@ -1,6 +1,6 @@
 const CustomsIntro = () => {
   return (
-    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 py-16 md:px-20 mb-15 md:mt-25 FTWZIntro">
+    <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 py-16 md:px-20 mb-15 md:mt-25 CustomsIntro">
       <div>
         <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           Custom Clearance Introduction

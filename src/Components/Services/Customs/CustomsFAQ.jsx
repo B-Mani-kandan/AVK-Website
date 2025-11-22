@@ -3,33 +3,33 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "How can I request a heavylift project assessment?",
+    question: "What documents are required for customs clearance?",
     answer:
-      "You can contact our team with your project specifications and lifting requirements. We will evaluate your site, load capacity, and provide a tailored lifting strategy that ensures safety and efficiency.",
+      "Common documents include the commercial invoice, packing list, bill of lading or airway bill, import/export license (if applicable), HS code details, and any mandatory certificates. Our team will guide you based on your shipment type.",
   },
   {
-    question: "Do you provide end-to-end heavylift solutions?",
+    question: "How long does the customs clearance process take?",
     answer:
-      "Yes, we handle everything from planning and logistics to equipment mobilization, lifting execution, and final placement of heavy cargo or structures on-site.",
+      "Clearance times vary by port, cargo category, and documentation accuracy. In most cases, import and export clearance is completed within 24–72 hours if all documents are correct.",
   },
   {
-    question: "What is the usual timeline for a heavylift operation?",
+    question: "Do you handle both import and export customs clearance?",
     answer:
-      "Timelines vary depending on the scale and complexity of the project. Smaller lifts can be completed within days, while large-scale industrial operations may require weeks of preparation and execution.",
+      "Yes, we provide end-to-end customs clearance for both import and export shipments, including documentation, filing, duty calculation, inspection coordination, and final release.",
   },
   {
-    question: "Do you offer onsite engineering & safety support?",
+    question: "Can you help with duty & tax calculation?",
     answer:
-      "Absolutely. Our experts conduct detailed lift studies, risk assessments, and provide onsite supervision to ensure that every lift is carried out safely and meets international standards.",
+      "Absolutely. We assist with HS code classification, duty structure verification, tax calculation, and checking eligibility for exemptions, notifications, and preferential duty benefits.",
   },
   {
-    question: "How can I get a detailed quote for my heavylift project?",
+    question: "Do you offer clearance at all major ports and airports?",
     answer:
-      "Share your project details such as load specifications, site conditions, and timelines. Our team will prepare a comprehensive proposal with cost estimates, equipment plans, and execution schedules.",
+      "Yes, our customs clearance services are available across major Indian seaports, airports, and ICDs. We coordinate with customs officials to ensure a fast and smooth clearance experience.",
   },
 ];
 
-const HeavyLiftFAQ = () => {
+const CustomsFAQ = () => {
   const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
@@ -50,8 +50,9 @@ const HeavyLiftFAQ = () => {
           Got Answers
         </h2>
         <p className="text-gray-600 text-sm sm:text-base mb-4 sm:mb-6">
-          Explore clear answers to common queries and understand how Free Trade
-          Warehousing Zones can benefit your business.
+          Explore clear answers to common customs clearance queries and
+          understand how our expertise ensures smooth, compliant, and
+          hassle-free shipment processing.
         </p>
       </div>
 
@@ -91,4 +92,4 @@ const HeavyLiftFAQ = () => {
   );
 };
 
-export default HeavyLiftFAQ;
+export default CustomsFAQ;

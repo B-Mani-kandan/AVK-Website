@@ -6,20 +6,20 @@ export default function HeavyLiftProcess() {
       title: <>Project Consultation</>,
       number: "01",
       desc: "We begin with a detailed consultation to understand cargo specifications, route challenges, and project timelines.",
-      bg: "bg-[#16a3e6] text-white",
+      bg: "bg-gray-100 text-black",
     },
     {
       title: <>Engineering & Planning</>,
       number: "02",
       desc: "Our team conducts route surveys, load studies, and develops customized lifting and transport strategies.",
-      bg: "bg-[#16a3e6] text-white",
+      bg: "bg-gray-100 text-black",
       clip: true,
     },
     {
       title: <>Transport & Installation</>,
       number: "03",
       desc: "We manage secure transportation and precise on-site installation using advanced equipment and expertise.",
-      bg: "bg-[#16a3e6] text-white",
+      bg: "bg-gray-100 text-black",
     },
     {
       title: <>Maintenance & Support</>,

@@ -1,5 +1,5 @@
 import Containers from "../../../assets/Containers.webp";
-
+import { Link } from "react-scroll";
 export default function CustomsHome() {
   return (
     <div
@@ -53,14 +53,19 @@ export default function CustomsHome() {
         </p>
 
         <div className="flex gap-3 sm:gap-4 mt-5 sm:mt-8">
-          <button
+          <Link
+            to="CustomsIntro"
+            smooth={true}
+            offset={-100}
+            duration={2000}
+            href="#Clearence"
             className="
               px-6 sm:px-8 
               py-2 sm:py-3 
               bg-black/80 
               backdrop-blur-md 
               border border-black/40 
-              rounded-full 
+              rounded-md
               text-white 
               text-xs sm:text-sm 
               hover:bg-black 
@@ -68,7 +73,7 @@ export default function CustomsHome() {
             "
           >
             Get Clearance Support
-          </button>
+          </Link>
         </div>
       </div>
     </div>

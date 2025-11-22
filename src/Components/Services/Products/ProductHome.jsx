@@ -36,7 +36,18 @@ const ProductHome = () => {
             offset={-100}
             duration={2000}
             href="#Discover"
-            className="border bg-[#ffd21c] font-bold border-[#ffd21c] font-new text-black px-5 py-2 rounded hover:bg-[#fcd34d] hover:text-black transition"
+            className="
+              px-6 sm:px-8 
+              py-2 sm:py-3 
+              bg-black/80 
+              backdrop-blur-md 
+              border border-black/40 
+              rounded-md
+              text-white 
+              text-xs sm:text-sm 
+              hover:bg-black 
+              transition
+            "
           >
             Discover More
           </Link>

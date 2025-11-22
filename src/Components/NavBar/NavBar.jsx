@@ -11,7 +11,7 @@ const Navbar = () => {
 
   const menuItems = [
     { name: "HOME", path: "/" },
-    { name: "ABOUT US", path: "/about" },
+    { name: "ABOUT US", path: "/About-Us" },
     {
       name: "OUR SERVICES",
       subMenu: [
