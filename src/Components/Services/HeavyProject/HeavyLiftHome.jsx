@@ -38,13 +38,14 @@ export default function HeavyLiftHome() {
             text-2xl 
             sm:text-2xl 
             md:text-3xl 
-            lg:text-4xl 
-            font-semibold 
+            lg:text-5xl 
+            font-bold 
+            font-new
             text-white 
             leading-tight
           "
         >
-          Tailored Heavy Lift Solutions for Oversized Shipments
+          Heavy-Lift Support for Big Shipments
         </h1>
 
         <p className="text-gray-300 text-sm sm:text-base mt-4 sm:mt-6 max-w-md">

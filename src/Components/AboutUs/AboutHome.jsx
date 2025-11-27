@@ -3,9 +3,9 @@ import Container from "../../assets/HangContiner.webp";
 import ContShip from "../../assets/SeaFreight/HomeShip.webp";
 import { Link } from "react-scroll";
 
-export default function HeroSection() {
+export default function AboutHeroHome() {
   return (
-    <div className="w-full min-h-screen bg-[#0e0e0f] text-white px-6 md:px-16 lg:px-24 py-20 md:mt-5 flex flex-col lg:flex-row items-center justify-between">
+    <div className="w-full min-h-screen bg-[#0e0e0f]  text-white px-6 md:px-16 lg:px-24 py-20 md:mt-5 flex flex-col lg:flex-row items-center justify-between">
       <div className="max-w-lg space-y-6">
         <p className="text-sm text-gray-500 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           ABOUT US
@@ -48,7 +48,7 @@ export default function HeroSection() {
           </Link>
         </div>
       </div>
-      <div className="mt-16 lg:mt-0 grid grid-cols-2 gap-5 lg:gap-8">
+      <div className="mt-16 lg:mt-0 grid grid-cols-2  gap-5 lg:gap-8">
         <div className="flex flex-col gap-5">
           <div className="w-40 h-40 sm:w-48 sm:h-48 rounded-full overflow-hidden shadow-xl ">
             <img src={ContShip} alt="" className="w-full h-full object-cover" />

@@ -5,7 +5,7 @@ const HomeAbout = () => {
         <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           ABOUT US
         </p>
-        <h2 className="text-5xl font-bold text-[#7c0204] leading-tight font-new">
+        <h2 className="text-5xl font-bold leading-tight font-new">
           Delivering <br />
           Excellence in <br />
           Every Shipment

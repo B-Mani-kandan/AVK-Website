@@ -153,7 +153,7 @@ export default function ContactUs() {
 
             <div className="flex flex-col sm:flex-row gap-6">
               <ContactItem icon={<Mail />} text="avktransglobal@gmail.com" />
-              <ContactItem icon={<Phone />} text="+91 9361252587" />
+              <ContactItem icon={<Phone />} text="+91 9042991934" />
             </div>
           </div>
         </div>
