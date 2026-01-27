@@ -16,7 +16,7 @@ const services = [
     ParaghSub: "Worldwide Sea Transport",
     Paragh:
       "We provide efficient and cost-effective ocean freight services with dependable schedules, professional handling, and complete visibility from port to port or door to door.",
-    link: "/Ocean-Freight-Services",
+    link: "/ocean-freight",
   },
   {
     id: "02",
@@ -27,7 +27,7 @@ const services = [
     ParaghSub: "Express Air Cargo",
     Paragh:
       "Our air freight services ensure speed, reliability, and precision for urgent shipments. We offer global coverage, competitive transit times, and seamless customs coordination.",
-    link: "/Air-Freight-Services",
+    link: "/air-freight",
   },
   {
     id: "03",
@@ -38,7 +38,7 @@ const services = [
     ParaghSub: "Engineering-Based Cargo Planning",
     Paragh:
       "From industrial machinery to infrastructure components, our experts deliver safe, customized heavy-lift solutions with route surveys, lifting strategies, and on-site supervision.",
-    link: "/Heavy-Lift-Cargo",
+    link: "/project-cargo",
   },
   {
     id: "04",
@@ -49,7 +49,7 @@ const services = [
     ParaghSub: "Safe Storage & Inventory Handling",
     Paragh:
       "We offer modern warehousing facilities with efficient inventory management, bonded storage, packaging, labeling, and last-mile distribution to optimize your logistics flow.",
-    link: "/Warehousing-Services",
+    link: "/warehousing",
   },
   {
     id: "05",
@@ -60,7 +60,7 @@ const services = [
     ParaghSub: "Global Forwarding Network",
     Paragh:
       "Our forwarding solutions cover transportation planning, carrier negotiation, documentation, and multimodal movement—ensuring smooth and timely delivery worldwide.",
-    link: "/Freight-Forwarding-Services",
+    link: "/forwarding",
   },
   {
     id: "06",
@@ -71,7 +71,7 @@ const services = [
     ParaghSub: "Compliance & Clearance",
     Paragh:
       "Our experienced customs team ensures quick processing, accurate filing, HS code classification, duty guidance, and regulatory compliance to prevent delays at ports and airports.",
-    link: "/Custom-Clearance",
+    link: "/custom-clearence",
   },
 ];
 

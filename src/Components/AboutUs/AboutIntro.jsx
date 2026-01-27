@@ -3,7 +3,7 @@ const AboutIntro = () => {
     <section className="grid grid-cols-1 md:grid-cols-2 gap-12 max-w-7xl mx-auto px-6 py-16 md:px-20 md:mt-15 ForwardingIntro">
       <div>
         <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
-          About AVK Trans Global
+          About Transit Sync Global
         </p>
 
         <h2 className="text-4xl sm:text-5xl font-bold leading-snug text-black font-new">
@@ -27,7 +27,7 @@ const AboutIntro = () => {
             With modern technology, real-time cargo visibility, and a dedicated
             team of logistics experts, we ensure your shipments are handled with
             efficiency, safety, and transparency. From international trade to
-            domestic distribution, AVK Trans Global delivers reliability at
+            domestic distribution, Transit Sync Global delivers reliability at
             every step of the journey.
           </p>
         </div>

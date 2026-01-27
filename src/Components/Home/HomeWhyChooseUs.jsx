@@ -38,7 +38,7 @@ export default function WhyChoose() {
     <section className="w-full max-w-7xl mx-auto px-6 py-16 md:px-20 md:mb-40 bg-white">
       <div className="text-center mb-10 px-4">
         <h2 className="text-4xl font-serif font-bold ">
-          Why <span className="text-[#7c0204] italic">Choose</span> AVK Trans
+          Why <span className="text-[#7c0204] italic">Choose</span> Transit Sync
           Global ?
         </h2>
         <p className="text-gray-600 mt-3 text-lg">

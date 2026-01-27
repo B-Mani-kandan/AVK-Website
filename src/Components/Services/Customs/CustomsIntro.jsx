@@ -5,9 +5,20 @@ const CustomsIntro = () => {
         <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           Custom Clearance Introduction
         </p>
-        <h2 className="text-5xl font-bold leading-snug text-black font-new">
-          Seamless & Faster <br />
-          Customs Processing <br />
+        <h2
+          className="
+  text-3xl 
+  sm:text-3xl 
+  md:text-4xl 
+  lg:text-5xl 
+  font-bold 
+  leading-snug 
+  text-black 
+  font-new
+"
+        >
+          Seamless & Faster <br className="hidden sm:block" />
+          Customs Processing <br className="hidden sm:block" />
           For Your Cargo
         </h2>
       </div>

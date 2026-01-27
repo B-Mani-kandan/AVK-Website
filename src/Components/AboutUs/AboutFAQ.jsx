@@ -3,7 +3,7 @@ import { Plus, Minus } from "lucide-react";
 
 const faqs = [
   {
-    question: "What services does AVK Trans Global provide?",
+    question: "What services does Transit Sync Global provide?",
     answer:
       "We offer end-to-end logistics solutions including freight forwarding, customs clearance, warehousing, distribution, project cargo handling, and multimodal transportation.",
   },
@@ -14,7 +14,7 @@ const faqs = [
   },
   {
     question:
-      "How is AVK Trans Global different from other logistics providers?",
+      "How is Transit Sync Global different from other logistics providers?",
     answer:
       "Our technology-driven operations, transparent communication, real-time tracking, and specialized logistics expertise help businesses simplify their entire supply chain.",
   },

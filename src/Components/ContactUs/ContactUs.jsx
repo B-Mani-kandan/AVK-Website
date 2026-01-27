@@ -151,9 +151,21 @@ export default function ContactUs() {
               You can also Contact Us via
             </h4>
 
-            <div className="flex flex-col sm:flex-row gap-6">
-              <ContactItem icon={<Mail />} text="avktransglobal@gmail.com" />
-              <ContactItem icon={<Phone />} text="+91 9042991934" />
+            <div className="flex flex-col gap-6 w-full">
+              <div className="flex flex-col sm:flex-row gap-6">
+                <ContactItem
+                  icon={<Mail />}
+                  text="vignes@transitsyncglobal.com"
+                />
+                <ContactItem
+                  icon={<Mail />}
+                  text="Bajibabu.r@transitsyncglobal.com"
+                />
+              </div>
+              <div className="flex flex-col sm:flex-row gap-6 mt-3">
+                <ContactItem icon={<Phone />} text="+91 9042991934" />
+                <ContactItem icon={<Phone />} text="+91 9994235531" />
+              </div>
             </div>
           </div>
         </div>

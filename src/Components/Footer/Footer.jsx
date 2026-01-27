@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import FooterHero from "./FooterHero";
-import Logo from "../../assets/Avk_Logo.webp";
+import Logo from "../../assets/TSG_Logo.webp";
 import { useLocation } from "react-router-dom";
 export default function Footer() {
   const footerLinks = {
@@ -9,19 +9,17 @@ export default function Footer() {
       { name: "Resources", to: "/resources" },
       { name: "About us", to: "/about" },
       { name: "FAQ", to: "/faq" },
-      { name: "Contact us", to: "/contact" },
+      { name: "Contact us", to: "/Contact-Us" },
     ],
     Social: [
       { name: "Facebook", to: "/facebook" },
       { name: "Instagram", to: "/instagram" },
       { name: "LinkedIn", to: "/linkedin" },
       { name: "Twitter", to: "/twitter" },
-      { name: "Youtube", to: "/youtube" },
     ],
     Legal: [
       { name: "Terms of service", to: "/terms" },
       { name: "Privacy policy", to: "/privacy" },
-      { name: "Cookie policy", to: "/cookies" },
     ],
   };
   const location = useLocation();
@@ -33,9 +31,9 @@ export default function Footer() {
         <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10">
           <div>
             <div className="flex items-center space-x-3 mb-6">
-              <img src={Logo} alt="Company Logo" className="w-22 h-10" />
+              <img src={Logo} alt="Company Logo" className="w-25 h-22" />
               <span className="text-white text-2xl font-semibold font-new">
-                Trans Global
+                Transit Sync Global
               </span>
             </div>
             <div className="space-y-1 text-sm leading-relaxed">
@@ -47,11 +45,14 @@ export default function Footer() {
             <div className="grid grid-cols-3 mt-6 text-sm">
               <div>
                 <h4 className="text-white font-medium mb-1">Phone number</h4>
-                <p>+91 9361252587</p>
+                <p>+91 9042991934</p>
+                <p>+91 9994235531</p>
               </div>
               <div>
                 <h4 className="text-white font-medium mb-1">Email</h4>
-                <p>avktransglobal@gmail.com</p>
+                <p>
+                  vignes@transitsyncglobal.com Bajibabu.r@transitsyncglobal.com
+                </p>
               </div>
             </div>
             <div className="mt-6">
@@ -88,7 +89,7 @@ export default function Footer() {
           </div>
         </div>
         <div className="text-center text-gray-400 text-xs mt-10">
-          © {new Date().getFullYear()} Avk Trans Global. All rights reserved.
+          © {new Date().getFullYear()} Transit Sync Global. All rights reserved.
         </div>
       </footer>
     </>

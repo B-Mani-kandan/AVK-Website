@@ -5,7 +5,7 @@ const ForwardingIntro = () => {
         <p className="text-sm text-gray-600 uppercase tracking-widest border-l-4 border-yellow-400 pl-3 mb-4 font-medium">
           Forwarding Services Introduction
         </p>
-        <h2 className="text-5xl font-bold leading-snug text-black font-new">
+        <h2 className="text-3xl sm:text-4xl md:text-5xl font-bold leading-snug text-black font-new">
           Reliable Global <br />
           Freight Forwarding <br />
           For Every Business
